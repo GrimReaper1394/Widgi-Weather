@@ -1,0 +1,138 @@
+@font-face {
+    font-family: "WeatherIcons";
+    src: url("https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/font/weathericons-regular-webfont.eot");
+    src: url("https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/font/weathericons-regular-webfont.eot?#iefix")
+        format("embedded-opentype"),
+      url("https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/font/weathericons-regular-webfont.woff2")
+        format("woff2"),
+      url("https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/font/weathericons-regular-webfont.woff")
+        format("woff"),
+      url("https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/font/weathericons-regular-webfont.ttf")
+        format("truetype"),
+      url("https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/font/weathericons-regular-webfont.svg#WeatherIcons")
+        format("svg");
+  }
+  
+  /*@import url("");*/
+  @import url("https://fonts.googleapis.com/css?family=Roboto");
+  
+  body {
+    background-color: #f2f2f2;
+    font-family: "Roboto", sans-serif;
+    padding: 20px;
+  }
+  
+  .App {
+    width: 800px;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  
+  .wrapper {
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+  }
+  
+  .LocationSelector {
+    margin-bottom: 10px;
+  }
+  
+  .LocationSelector__input {
+    margin-bottom: 15px;
+    padding: 7px 10px;
+    border: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+    font-size: 15px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .react-autosuggest__container input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+  
+  .location {
+    margin-bottom: 20px;
+  }
+  
+  .location__name {
+    font-size: 20px;
+    color: #444;
+  }
+  
+  .current {
+    margin-bottom: 20px;
+    display: flex;
+  }
+  
+  .current__conditions {
+    display: flex;
+    padding: 5px;
+    box-sizing: border-box;
+    align-items: center;
+  }
+  
+  .current__conditions,
+  .current__details {
+    flex-grow: 1;
+  }
+  
+  .current__temp {
+    font-size: 36px;
+    margin-left: 10px;
+  }
+  
+  .current__icon {
+    font-size: 48px;
+  }
+  
+  .forecast__days {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .forecast__day {
+    text-align: center;
+    flex-grow: 1;
+    cursor: pointer;
+    padding: 5px 0;
+  }
+  
+  .forecast__day.selected {
+    border: 1px solid #ddd;
+    background-color: #fcfcfc;
+  }
+  
+  .forecast__day__dow {
+    color: #999;
+    margin-bottom: 5px;
+  }
+  
+  .forecast__day__icon {
+    font-size: 28px;
+  }
+  
+  .forecast__day__temp {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+  }
+  
+  .forecast__day__temp__min {
+    color: #999;
+  }
+  
+  .forecast__day__temp__max {
+    color: #333;
+  }
+  
+  .forecast__day__temp__min,
+  .forecast__day__temp__max {
+    padding: 3px;
+  }
+  
